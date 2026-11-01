@@ -1,0 +1,86 @@
+[tasks.test]
+clear = true
+description = "Run native firmware checks against the selected RMK source (no hardware needed)"
+script = '''
+host=$(rustc -vV | sed -n 's/^host: //p')
+cargo test --manifest-path tests/host/Cargo.toml --target "$host" --locked
+'''
+
+[tasks.install-llvm-tools]
+install_crate = { rustup_component_name = "llvm-tools" }
+
+[tasks.flip-link]
+install_crate = { crate_name = "flip-link", binary = "flip-link", test_arg = ["-h"] }
+
+[tasks.objcopy-central]
+install_crate = { crate_name = "cargo-binutils", binary = "cargo", test_arg = [
+    "objcopy",
+    "--help",
+] }
+command = "cargo"
+args = [
+    "objcopy",
+    "--release",
+    "--bin",
+    "central",
+    "--",
+    "-O",
+    "ihex",
+    "remake-miryoku-central.hex",
+]
+dependencies = ["install-llvm-tools", "flip-link"]
+
+[tasks.objcopy-peripheral]
+install_crate = { crate_name = "cargo-binutils", binary = "cargo", test_arg = [
+    "objcopy",
+    "--help",
+] }
+command = "cargo"
+args = [
+    "objcopy",
+    "--release",
+    "--bin",
+    "peripheral",
+    "--",
+    "-O",
+    "ihex",
+    "remake-miryoku-peripheral.hex",
+]
+dependencies = ["install-llvm-tools", "flip-link"]
+
+[tasks.uf2-central]
+install_crate = { crate_name = "cargo-hex-to-uf2", binary = "cargo", test_arg = [
+    "hex-to-uf2",
+    "--help",
+] }
+command = "cargo"
+args = [
+    "hex-to-uf2",
+    "--input-path",
+    "remake-miryoku-central.hex",
+    "--output-path",
+    "remake-miryoku-central.uf2",
+    "--family",
+    "nrf52840",
+]
+dependencies = ["objcopy-central"]
+
+[tasks.uf2-peripheral]
+install_crate = { crate_name = "cargo-hex-to-uf2", binary = "cargo", test_arg = [
+    "hex-to-uf2",
+    "--help",
+] }
+command = "cargo"
+args = [
+    "hex-to-uf2",
+    "--input-path",
+    "remake-miryoku-peripheral.hex",
+    "--output-path",
+    "remake-miryoku-peripheral.uf2",
+    "--family",
+    "nrf52840",
+]
+dependencies = ["objcopy-peripheral"]
+
+[tasks.uf2]
+dependencies = ["uf2-central", "uf2-peripheral"]

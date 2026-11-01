@@ -1,0 +1,183 @@
+[keyboard]
+name = "remake-miryoku"
+product_name = "REMAKE Miryoku"
+vendor_id = 0x4c4b
+product_id = 0x4643
+manufacturer = "RMK"
+chip = "nrf52840"
+
+[layout]
+rows = 4
+cols = 10
+# KiCad SW18/SW16/SW17 are physical ROW3/COL2/COL3/COL4 on each half.
+# Right-hand scan columns are reversed to keep the map in typing order.
+map = """
+(0,0,L) (0,1,L) (0,2,L) (0,3,L) (0,4,L) (0,5,R) (0,6,R) (0,7,R) (0,8,R) (0,9,R)
+(1,0,L) (1,1,L) (1,2,L) (1,3,L) (1,4,L) (1,5,R) (1,6,R) (1,7,R) (1,8,R) (1,9,R)
+(2,0,L) (2,1,L) (2,2,L) (2,3,L) (2,4,L) (2,5,R) (2,6,R) (2,7,R) (2,8,R) (2,9,R)
+                (3,2,L) (3,3,L) (3,4,L) (3,5,R) (3,6,R) (3,7,R)
+"""
+
+[keymap]
+layers = 7
+# Portable default Miryoku (Colemak Mod-DH), based on Miryoku Babel
+# 64791c9f895e9b49809e36420ebbf1b8573288cc. No Auto Shift or layer locks.
+
+[[keymap.layer]]
+name = "Base"
+keys = """
+Q           W            F             P             B       J       L             U             Y             Quote
+MT(A,LGui)  MT(R,LAlt)   MT(S,LCtrl)   MT(T,LShift)   G       M       MT(N,RShift)  MT(E,RCtrl)   MT(I,RAlt)    MT(O,RGui)
+Z           MT(X,RAlt)  C             D             V       K       H             Comma         MT(Dot,RAlt)  Slash
+                         LT(3,Escape,THUMB) LT(1,Space,THUMB) LT(2,Tab,THUMB) LT(5,Enter,THUMB) LT(4,Backspace,THUMB) LT(6,Delete,THUMB)
+"""
+
+[[keymap.layer]]
+name = "Nav"
+keys = """
+TD(0)  No    No     No      No  Macro(0)        WM(Insert,LShift) WM(Insert,LCtrl) WM(Delete,LShift) Undo
+LGui   LAlt  LCtrl  LShift  No  CapsWordToggle  Left              Down              Up                Right
+No     RAlt  No     No      No  Insert          Home              PageDown          PageUp            End
+             No     No      No  Enter           Backspace         Delete
+"""
+
+[[keymap.layer]]
+name = "Mouse"
+keys = """
+TD(0)  No    No     No      No  Macro(0) WM(Insert,LShift) WM(Insert,LCtrl) WM(Delete,LShift) Undo
+LGui   LAlt  LCtrl  LShift  No  No     MouseLeft         MouseDown         MouseUp           MouseRight
+No     RAlt  No     No      No  No     MouseWheelLeft    MouseWheelDown    MouseWheelUp      MouseWheelRight
+             No     No      No  MouseBtn2 MouseBtn1 MouseBtn3
+"""
+
+[[keymap.layer]]
+name = "Media"
+keys = """
+TD(0)  No    No     No      No  No     User4           User5          User6        User7
+LGui   LAlt  LCtrl  LShift  No  No     MediaPrevTrack  AudioVolDown   AudioVolUp   MediaNextTrack
+No     RAlt  No     No      No  User9  User0           User1          User2        User3
+             No     No      No  MediaStop MediaPlayPause AudioMute
+"""
+
+[[keymap.layer]]
+name = "Num"
+keys = """
+LeftBracket 7 8 9 RightBracket  No No     No     No    TD(0)
+Semicolon   4 5 6 Equal         No RShift RCtrl  RAlt  RGui
+Grave       1 2 3 Backslash     No No     No     RAlt  No
+              Dot 0 Minus       No No No
+"""
+
+[[keymap.layer]]
+name = "Sym"
+keys = """
+WM(LeftBracket,LShift) WM(7,LShift) WM(8,LShift) WM(9,LShift) WM(RightBracket,LShift) No No     No     No    TD(0)
+WM(Semicolon,LShift)   WM(4,LShift) WM(5,LShift) WM(6,LShift) WM(Equal,LShift)        No RShift RCtrl  RAlt  RGui
+WM(Grave,LShift)       WM(1,LShift) WM(2,LShift) WM(3,LShift) WM(Backslash,LShift)    No No     No     RAlt  No
+                                   WM(9,LShift) WM(0,LShift) WM(Minus,LShift)        No No No
+"""
+
+[[keymap.layer]]
+name = "Fun"
+keys = """
+F12 F7 F8 F9 PrintScreen  No No     No     No    TD(0)
+F11 F4 F5 F6 ScrollLock   No RShift RCtrl  RAlt  RGui
+F10 F1 F2 F3 Pause        No No     No     RAlt  No
+        Application Space Tab No No No
+"""
+
+[rmk]
+# Match ZMK's 5ms press/release debounce.
+debounce_time = 5
+# The number of available BLE profiles
+ble_profiles_num = 6
+# enable sleep
+split_central_sleep_timeout_seconds = 30
+
+[ble]
+enabled = true
+
+[event.battery_status]
+channel_size = 2
+pubs = 1
+subs = 2
+
+[event.connection_status_change]
+channel_size = 2
+pubs = 2
+subs = 2
+
+[event.layer_change]
+channel_size = 2
+pubs = 2
+subs = 2
+
+[event.central_connected]
+channel_size = 2
+pubs = 1
+subs = 2
+
+[event.sleep_state]
+# Two slots also allow both screen roles in native tests. RMK adds split-link slots.
+channel_size = 1
+pubs = 1
+subs = 2
+
+[behavior.morse]
+# Home-row mods: opposite-hand chords hold; same-hand rolls tap.
+permissive_hold = true
+unilateral_tap = true
+enable_flow_tap = false
+hold_timeout = "200ms"
+# Keep tap-then-hold repeat disabled.
+quick_tap_timeout = "0ms"
+
+[behavior.morse.profiles]
+# Resolve thumb holds on the following press; no fork-only event buffering.
+THUMB = { hold_on_other_press = true, unilateral_tap = false }
+BOOT = { normal_mode = true, unilateral_tap = false, gap_timeout = "200ms" }
+
+[[behavior.morse.morses]]
+# Same-hand top-row pinkie on any sublayer: double tap to enter bootloader.
+tap = "No"
+hold = "No"
+double_tap = "Bootloader"
+hold_after_tap = "No"
+profile = "BOOT"
+
+[behavior.macros]
+# RMK's normal Again action repeats the last key. A compact macro tap emits
+# the raw HID Again/Redo usage instead, preserving Miryoku's clipboard binding.
+macros = [{ operations = [{ operation = "tap", keycode = "Again" }] }]
+
+[split]
+connection = "ble"
+
+[split.central]
+rows = 4
+cols = 5
+row_offset = 0
+col_offset = 0
+
+battery_adc_pin = "vddh"
+
+[split.central.matrix]
+row2col = false
+row_pins = ["P1_00", "P0_11", "P1_04", "P1_06"]
+# D18 is P1.15 on nice!nano v2; KiCad's U1 P0.15 label is a typo.
+col_pins = ["P1_15", "P1_13", "P1_11", "P0_10", "P0_09"]
+
+[[split.peripheral]]
+rows = 4
+cols = 5
+row_offset = 0
+col_offset = 5
+
+battery_adc_pin = "vddh"
+
+[split.peripheral.matrix]
+row2col = false
+# JPR maps the flipped module's socket contacts back to the same row GPIOs.
+row_pins = ["P1_00", "P0_11", "P1_04", "P1_06"]
+# Physical COL4..COL0 become logical columns 5..9 (inner to outer).
+col_pins = ["P0_09", "P0_10", "P1_11", "P1_13", "P1_15"]
