@@ -1,25 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="3692" viewBox="0 0 1200 3692" role="img" aria-labelledby="title description">
 <title id="title">REMAKE Miryoku — all layers</title>
-<desc id="description">36-key REMAKE split keyboard. Each layer is shown in typing orientation with staggered columns and three thumbs per hand. Lower legends on dual-function keys show hold actions; tinted thumbs on sublayers mark the held selector. Down triangles are transparent bindings, and dashes are disabled bindings. Colors use Ef Melissa Light.</desc>
-<metadata>keyboard.toml sha256: a17932a280042fe6106a0ad9eadb727e472afa42ccc42e1146bfefdcefef5a92; palette: Ef Melissa Light 2.2.1, Protesilaos Stavrou; schematic key placement.</metadata>
+<desc id="description">36-key REMAKE split keyboard. Each layer is shown in typing orientation with staggered columns and three thumbs per hand. Lower legends on dual-function keys show hold actions; tinted thumbs on sublayers mark the held selector. Down triangles are transparent bindings, and dashes are disabled bindings. Colors use Modus Operandi.</desc>
+<metadata>keyboard.toml sha256: a17932a280042fe6106a0ad9eadb727e472afa42ccc42e1146bfefdcefef5a92; palette: Modus Operandi, Protesilaos Stavrou, 20261015.953 (6272f81ae3fe); schematic key placement.</metadata>
 <style>
-text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
-.dim{fill:#68708a}.title{font-size:30px;font-weight:700}
+text{font-family:"DejaVu Sans",sans-serif;fill:#000000;text-anchor:middle}
+.binding text{fill:#000000}
+.dim{fill:#595959}.binding .dim{fill:#595959}
+.title{font-size:30px;font-weight:700}
 .heading{font-size:21px;font-weight:700}.caption{font-size:14px}
 .legend{font-size:15px}.main{font-size:21px;font-weight:600}
 .sub{font-size:12px}.flag{font-size:9px;font-weight:700;letter-spacing:1px}
-.key{fill:#f5e9cb;stroke:#c5baa6;stroke-width:1.3}
-.disabled{fill:#f0e3cd;stroke:#c5baa6;stroke-width:1}
-.transparent{fill:#fff6d8;stroke:#c5baa6;stroke-dasharray:4 3}
+.key{fill:#f2f2f2;stroke:#595959;stroke-width:1.3}
+.disabled{fill:#e0e0e0;stroke:#595959;stroke-width:1}
+.transparent{fill:#ffffff;stroke:#595959;stroke-dasharray:4 3}
 </style>
-<rect width="1200" height="3692" fill="#fff6d8"/>
+<rect width="1200" height="3692" fill="#ffffff"/>
 <text class="title" x="600" y="48">REMAKE Miryoku · keymap</text>
 <text class="caption dim" x="600" y="78">36 keys · three thumbs per hand · US symbol legends</text>
 <text class="legend" x="600" y="110">Tap: large legend · Hold: colored lower legend · ▽ transparent · — disabled</text>
 <g id="layer-0" data-layer="Base">
-<rect x="60" y="146" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="162" width="300" height="38" rx="9" fill="#f4ed7e"/>
-<text class="heading" x="600" y="189" style="fill:#a26310">0 · Base</text>
+<rect x="60" y="146" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="162" width="300" height="38" rx="9" fill="#f8f0d0"/>
+<text class="heading" x="600" y="189" style="fill:#624416">0 · Base</text>
 <text class="caption dim" x="600" y="222">Tap for typing. Hold a colored thumb to access its matching layer.</text>
 <g class="binding" data-row="0" data-col="0" data-action="Q" transform="translate(146 340) rotate(0)">
 <title>Base (0,0): Q</title>
@@ -73,27 +75,27 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="MT(A,LGui)" transform="translate(146 412) rotate(0)">
 <title>Base (1,0): MT(A,LGui)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">A</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L GUI</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L GUI</text>
 </g>
 <g class="binding" data-row="1" data-col="1" data-action="MT(R,LAlt)" transform="translate(226 364) rotate(0)">
 <title>Base (1,1): MT(R,LAlt)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">R</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L Alt</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="2" data-action="MT(S,LCtrl)" transform="translate(306 340) rotate(0)">
 <title>Base (1,2): MT(S,LCtrl)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">S</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L Ctrl</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="3" data-action="MT(T,LShift)" transform="translate(386 366) rotate(0)">
 <title>Base (1,3): MT(T,LShift)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">T</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L Shift</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: L Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="4" data-action="G" transform="translate(466 376) rotate(0)">
 <title>Base (1,4): G</title>
@@ -107,27 +109,27 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="6" data-action="MT(N,RShift)" transform="translate(846 366) rotate(0)">
 <title>Base (1,6): MT(N,RShift)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">N</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Shift</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="7" data-action="MT(E,RCtrl)" transform="translate(926 340) rotate(0)">
 <title>Base (1,7): MT(E,RCtrl)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">E</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Ctrl</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="8" data-action="MT(I,RAlt)" transform="translate(1006 364) rotate(0)">
 <title>Base (1,8): MT(I,RAlt)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">I</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Alt</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="9" data-action="MT(O,RGui)" transform="translate(1086 412) rotate(0)">
 <title>Base (1,9): MT(O,RGui)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">O</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R GUI</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R GUI</text>
 </g>
 <g class="binding" data-row="2" data-col="0" data-action="Z" transform="translate(146 484) rotate(0)">
 <title>Base (2,0): Z</title>
@@ -136,9 +138,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="1" data-action="MT(X,RAlt)" transform="translate(226 436) rotate(0)">
 <title>Base (2,1): MT(X,RAlt)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">X</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Alt</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="2" data-action="C" transform="translate(306 412) rotate(0)">
 <title>Base (2,2): C</title>
@@ -172,9 +174,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="8" data-action="MT(Dot,RAlt)" transform="translate(1006 436) rotate(0)">
 <title>Base (2,8): MT(Dot,RAlt)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">.</text>
-<text class="sub" x="0" y="22" style="fill:#a26310" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Alt</text>
+<text class="sub" x="0" y="22" style="fill:#624416" textLength="64" lengthAdjust="spacingAndGlyphs">hold: R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="9" data-action="Slash" transform="translate(1086 484) rotate(0)">
 <title>Base (2,9): Slash</title>
@@ -183,51 +185,51 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="3" data-col="2" data-action="LT(3,Escape,THUMB)" transform="translate(387 511) rotate(0)">
 <title>Base (3,2): LT(3,Escape,THUMB)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#fad6ef;stroke:#aa3e74;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8e6f5;stroke:#721045;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Esc</text>
-<text class="sub" x="0" y="22" style="fill:#aa3e74" textLength="64" lengthAdjust="spacingAndGlyphs">hold: Media</text>
+<text class="sub" x="0" y="22" style="fill:#721045" textLength="64" lengthAdjust="spacingAndGlyphs">hold: Media</text>
 </g>
 <g class="binding" data-row="3" data-col="3" data-action="LT(1,Space,THUMB)" transform="translate(480 523) rotate(15)">
 <title>Base (3,3): LT(1,Space,THUMB)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#008250;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f6e0;stroke:#2a5045;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Space</text>
-<text class="sub" x="0" y="22" style="fill:#008250">hold: Nav</text>
+<text class="sub" x="0" y="22" style="fill:#2a5045">hold: Nav</text>
 </g>
 <g class="binding" data-row="3" data-col="4" data-action="LT(2,Tab,THUMB)" transform="translate(561 558) rotate(30)">
 <title>Base (3,4): LT(2,Tab,THUMB)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Tab</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6" textLength="64" lengthAdjust="spacingAndGlyphs">hold: Mouse</text>
+<text class="sub" x="0" y="22" style="fill:#003497" textLength="64" lengthAdjust="spacingAndGlyphs">hold: Mouse</text>
 </g>
 <g class="binding" data-row="3" data-col="5" data-action="LT(5,Enter,THUMB)" transform="translate(671 558) rotate(-30)">
 <title>Base (3,5): LT(5,Enter,THUMB)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#bfefef;stroke:#0f708a;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f2fa;stroke:#005077;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Enter</text>
-<text class="sub" x="0" y="22" style="fill:#0f708a">hold: Sym</text>
+<text class="sub" x="0" y="22" style="fill:#005077">hold: Sym</text>
 </g>
 <g class="binding" data-row="3" data-col="6" data-action="LT(4,Backspace,THUMB)" transform="translate(752 523) rotate(-15)">
 <title>Base (3,6): LT(4,Backspace,THUMB)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#5a7400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#c0e7d4;stroke:#124b41;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Bksp</text>
-<text class="sub" x="0" y="22" style="fill:#5a7400">hold: Num</text>
+<text class="sub" x="0" y="22" style="fill:#124b41">hold: Num</text>
 </g>
 <g class="binding" data-row="3" data-col="7" data-action="LT(6,Delete,THUMB)" transform="translate(845 511) rotate(0)">
 <title>Base (3,7): LT(6,Delete,THUMB)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#ba2d2f;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffe8e8;stroke:#7f0000;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Del</text>
-<text class="sub" x="0" y="22" style="fill:#ba2d2f">hold: Fun</text>
+<text class="sub" x="0" y="22" style="fill:#7f0000">hold: Fun</text>
 </g>
 </g>
 <g id="layer-1" data-layer="Nav">
-<rect x="60" y="632" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="648" width="300" height="38" rx="9" fill="#cbf09f"/>
-<text class="heading" x="600" y="675" style="fill:#008250">1 · Nav</text>
+<rect x="60" y="632" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="648" width="300" height="38" rx="9" fill="#e0f6e0"/>
+<text class="heading" x="600" y="675" style="fill:#2a5045">1 · Nav</text>
 <text class="caption dim" x="600" y="708">Hold Space thumb</text>
 <g class="binding" data-row="0" data-col="0" data-action="TD(0)" transform="translate(146 826) rotate(0)">
 <title>Nav (0,0): TD(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#c74400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f1c8b5;stroke:#63192a;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Boot</text>
-<text class="sub" x="0" y="22" style="fill:#c74400">2× tap</text>
+<text class="sub" x="0" y="22" style="fill:#63192a">2× tap</text>
 </g>
 <g class="binding" data-row="0" data-col="1" data-action="No" transform="translate(226 778) rotate(0)">
 <title>Nav (0,1): No</title>
@@ -251,27 +253,27 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="0" data-col="5" data-action="Macro(0)" transform="translate(766 790) rotate(0)">
 <title>Nav (0,5): Macro(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#008250;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f6e0;stroke:#2a5045;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Redo</text>
-<text class="sub" x="0" y="22" style="fill:#008250">macro 0</text>
+<text class="sub" x="0" y="22" style="fill:#2a5045">macro 0</text>
 </g>
 <g class="binding" data-row="0" data-col="6" data-action="WM(Insert,LShift)" transform="translate(846 780) rotate(0)">
 <title>Nav (0,6): WM(Insert,LShift)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#008250;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f6e0;stroke:#2a5045;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Paste</text>
-<text class="sub" x="0" y="22" style="fill:#008250" textLength="64" lengthAdjust="spacingAndGlyphs">Shift+Insert</text>
+<text class="sub" x="0" y="22" style="fill:#2a5045" textLength="64" lengthAdjust="spacingAndGlyphs">Shift+Insert</text>
 </g>
 <g class="binding" data-row="0" data-col="7" data-action="WM(Insert,LCtrl)" transform="translate(926 754) rotate(0)">
 <title>Nav (0,7): WM(Insert,LCtrl)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#008250;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f6e0;stroke:#2a5045;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Copy</text>
-<text class="sub" x="0" y="22" style="fill:#008250" textLength="64" lengthAdjust="spacingAndGlyphs">Ctrl+Insert</text>
+<text class="sub" x="0" y="22" style="fill:#2a5045" textLength="64" lengthAdjust="spacingAndGlyphs">Ctrl+Insert</text>
 </g>
 <g class="binding" data-row="0" data-col="8" data-action="WM(Delete,LShift)" transform="translate(1006 778) rotate(0)">
 <title>Nav (0,8): WM(Delete,LShift)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#008250;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f6e0;stroke:#2a5045;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Cut</text>
-<text class="sub" x="0" y="22" style="fill:#008250">Shift+Del</text>
+<text class="sub" x="0" y="22" style="fill:#2a5045">Shift+Del</text>
 </g>
 <g class="binding" data-row="0" data-col="9" data-action="Undo" transform="translate(1086 826) rotate(0)">
 <title>Nav (0,9): Undo</title>
@@ -280,22 +282,22 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="LGui" transform="translate(146 898) rotate(0)">
 <title>Nav (1,0): LGui</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L GUI</text>
 </g>
 <g class="binding" data-row="1" data-col="1" data-action="LAlt" transform="translate(226 850) rotate(0)">
 <title>Nav (1,1): LAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="2" data-action="LCtrl" transform="translate(306 826) rotate(0)">
 <title>Nav (1,2): LCtrl</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="3" data-action="LShift" transform="translate(386 852) rotate(0)">
 <title>Nav (1,3): LShift</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:15.7px">L Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="4" data-action="No" transform="translate(466 862) rotate(0)">
@@ -335,7 +337,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="1" data-action="RAlt" transform="translate(226 922) rotate(0)">
 <title>Nav (2,1): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="2" data-action="No" transform="translate(306 898) rotate(0)">
@@ -385,10 +387,10 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="3" data-col="3" data-action="No" transform="translate(480 1009) rotate(15)">
 <title>Nav (3,3): No; held selector from Base</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#008250;stroke-width:1.7"/>
-<text class="flag" x="0" y="-18" style="fill:#008250">HELD</text>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f6e0;stroke:#2a5045;stroke-width:1.7"/>
+<text class="flag" x="0" y="-18" style="fill:#2a5045">HELD</text>
 <text class="main" x="0" y="1" style="font-size:21.0px">Space</text>
-<text class="sub" x="0" y="22" style="fill:#008250">Nav</text>
+<text class="sub" x="0" y="22" style="fill:#2a5045">Nav</text>
 </g>
 <g class="binding" data-row="3" data-col="4" data-action="No" transform="translate(561 1044) rotate(30)">
 <title>Nav (3,4): No</title>
@@ -412,15 +414,15 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 </g>
 <g id="layer-2" data-layer="Mouse">
-<rect x="60" y="1118" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="1134" width="300" height="38" rx="9" fill="#cce4f2"/>
-<text class="heading" x="600" y="1161" style="fill:#375cc6">2 · Mouse</text>
+<rect x="60" y="1118" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="1134" width="300" height="38" rx="9" fill="#ecedff"/>
+<text class="heading" x="600" y="1161" style="fill:#003497">2 · Mouse</text>
 <text class="caption dim" x="600" y="1194">Hold Tab thumb</text>
 <g class="binding" data-row="0" data-col="0" data-action="TD(0)" transform="translate(146 1312) rotate(0)">
 <title>Mouse (0,0): TD(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#c74400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f1c8b5;stroke:#63192a;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Boot</text>
-<text class="sub" x="0" y="22" style="fill:#c74400">2× tap</text>
+<text class="sub" x="0" y="22" style="fill:#63192a">2× tap</text>
 </g>
 <g class="binding" data-row="0" data-col="1" data-action="No" transform="translate(226 1264) rotate(0)">
 <title>Mouse (0,1): No</title>
@@ -444,27 +446,27 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="0" data-col="5" data-action="Macro(0)" transform="translate(766 1276) rotate(0)">
 <title>Mouse (0,5): Macro(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Redo</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">macro 0</text>
+<text class="sub" x="0" y="22" style="fill:#003497">macro 0</text>
 </g>
 <g class="binding" data-row="0" data-col="6" data-action="WM(Insert,LShift)" transform="translate(846 1266) rotate(0)">
 <title>Mouse (0,6): WM(Insert,LShift)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Paste</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6" textLength="64" lengthAdjust="spacingAndGlyphs">Shift+Insert</text>
+<text class="sub" x="0" y="22" style="fill:#003497" textLength="64" lengthAdjust="spacingAndGlyphs">Shift+Insert</text>
 </g>
 <g class="binding" data-row="0" data-col="7" data-action="WM(Insert,LCtrl)" transform="translate(926 1240) rotate(0)">
 <title>Mouse (0,7): WM(Insert,LCtrl)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Copy</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6" textLength="64" lengthAdjust="spacingAndGlyphs">Ctrl+Insert</text>
+<text class="sub" x="0" y="22" style="fill:#003497" textLength="64" lengthAdjust="spacingAndGlyphs">Ctrl+Insert</text>
 </g>
 <g class="binding" data-row="0" data-col="8" data-action="WM(Delete,LShift)" transform="translate(1006 1264) rotate(0)">
 <title>Mouse (0,8): WM(Delete,LShift)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Cut</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">Shift+Del</text>
+<text class="sub" x="0" y="22" style="fill:#003497">Shift+Del</text>
 </g>
 <g class="binding" data-row="0" data-col="9" data-action="Undo" transform="translate(1086 1312) rotate(0)">
 <title>Mouse (0,9): Undo</title>
@@ -473,22 +475,22 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="LGui" transform="translate(146 1384) rotate(0)">
 <title>Mouse (1,0): LGui</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L GUI</text>
 </g>
 <g class="binding" data-row="1" data-col="1" data-action="LAlt" transform="translate(226 1336) rotate(0)">
 <title>Mouse (1,1): LAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="2" data-action="LCtrl" transform="translate(306 1312) rotate(0)">
 <title>Mouse (1,2): LCtrl</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="3" data-action="LShift" transform="translate(386 1338) rotate(0)">
 <title>Mouse (1,3): LShift</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:15.7px">L Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="4" data-action="No" transform="translate(466 1348) rotate(0)">
@@ -505,25 +507,25 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 <title>Mouse (1,6): MouseLeft</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">←</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">mouse</text>
+<text class="sub" x="0" y="22" style="fill:#003497">mouse</text>
 </g>
 <g class="binding" data-row="1" data-col="7" data-action="MouseDown" transform="translate(926 1312) rotate(0)">
 <title>Mouse (1,7): MouseDown</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">↓</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">mouse</text>
+<text class="sub" x="0" y="22" style="fill:#003497">mouse</text>
 </g>
 <g class="binding" data-row="1" data-col="8" data-action="MouseUp" transform="translate(1006 1336) rotate(0)">
 <title>Mouse (1,8): MouseUp</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">↑</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">mouse</text>
+<text class="sub" x="0" y="22" style="fill:#003497">mouse</text>
 </g>
 <g class="binding" data-row="1" data-col="9" data-action="MouseRight" transform="translate(1086 1384) rotate(0)">
 <title>Mouse (1,9): MouseRight</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">→</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">mouse</text>
+<text class="sub" x="0" y="22" style="fill:#003497">mouse</text>
 </g>
 <g class="binding" data-row="2" data-col="0" data-action="No" transform="translate(146 1456) rotate(0)">
 <title>Mouse (2,0): No</title>
@@ -532,7 +534,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="1" data-action="RAlt" transform="translate(226 1408) rotate(0)">
 <title>Mouse (2,1): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="2" data-action="No" transform="translate(306 1384) rotate(0)">
@@ -559,25 +561,25 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 <title>Mouse (2,6): MouseWheelLeft</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">←</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">scroll</text>
+<text class="sub" x="0" y="22" style="fill:#003497">scroll</text>
 </g>
 <g class="binding" data-row="2" data-col="7" data-action="MouseWheelDown" transform="translate(926 1384) rotate(0)">
 <title>Mouse (2,7): MouseWheelDown</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">↓</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">scroll</text>
+<text class="sub" x="0" y="22" style="fill:#003497">scroll</text>
 </g>
 <g class="binding" data-row="2" data-col="8" data-action="MouseWheelUp" transform="translate(1006 1408) rotate(0)">
 <title>Mouse (2,8): MouseWheelUp</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">↑</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">scroll</text>
+<text class="sub" x="0" y="22" style="fill:#003497">scroll</text>
 </g>
 <g class="binding" data-row="2" data-col="9" data-action="MouseWheelRight" transform="translate(1086 1456) rotate(0)">
 <title>Mouse (2,9): MouseWheelRight</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">→</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">scroll</text>
+<text class="sub" x="0" y="22" style="fill:#003497">scroll</text>
 </g>
 <g class="binding" data-row="3" data-col="2" data-action="No" transform="translate(387 1483) rotate(0)">
 <title>Mouse (3,2): No</title>
@@ -591,10 +593,10 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="3" data-col="4" data-action="No" transform="translate(561 1530) rotate(30)">
 <title>Mouse (3,4): No; held selector from Base</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
-<text class="flag" x="0" y="-18" style="fill:#375cc6">HELD</text>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
+<text class="flag" x="0" y="-18" style="fill:#003497">HELD</text>
 <text class="main" x="0" y="1" style="font-size:21.0px">Tab</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">Mouse</text>
+<text class="sub" x="0" y="22" style="fill:#003497">Mouse</text>
 </g>
 <g class="binding" data-row="3" data-col="5" data-action="MouseBtn2" transform="translate(671 1530) rotate(-30)">
 <title>Mouse (3,5): MouseBtn2</title>
@@ -613,15 +615,15 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 </g>
 <g id="layer-3" data-layer="Media">
-<rect x="60" y="1604" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="1620" width="300" height="38" rx="9" fill="#fad6ef"/>
-<text class="heading" x="600" y="1647" style="fill:#aa3e74">3 · Media</text>
+<rect x="60" y="1604" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="1620" width="300" height="38" rx="9" fill="#f8e6f5"/>
+<text class="heading" x="600" y="1647" style="fill:#721045">3 · Media</text>
 <text class="caption dim" x="600" y="1680">Hold Esc thumb</text>
 <g class="binding" data-row="0" data-col="0" data-action="TD(0)" transform="translate(146 1798) rotate(0)">
 <title>Media (0,0): TD(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#c74400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f1c8b5;stroke:#63192a;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Boot</text>
-<text class="sub" x="0" y="22" style="fill:#c74400">2× tap</text>
+<text class="sub" x="0" y="22" style="fill:#63192a">2× tap</text>
 </g>
 <g class="binding" data-row="0" data-col="1" data-action="No" transform="translate(226 1750) rotate(0)">
 <title>Media (0,1): No</title>
@@ -650,46 +652,46 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="0" data-col="6" data-action="User4" transform="translate(846 1752) rotate(0)">
 <title>Media (0,6): User4</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">BT 4</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="0" data-col="7" data-action="User5" transform="translate(926 1726) rotate(0)">
 <title>Media (0,7): User5</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">BT 5</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="0" data-col="8" data-action="User6" transform="translate(1006 1750) rotate(0)">
 <title>Media (0,8): User6</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:15.7px">Next BT</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="0" data-col="9" data-action="User7" transform="translate(1086 1798) rotate(0)">
 <title>Media (0,9): User7</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:15.7px">Prev BT</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="LGui" transform="translate(146 1870) rotate(0)">
 <title>Media (1,0): LGui</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L GUI</text>
 </g>
 <g class="binding" data-row="1" data-col="1" data-action="LAlt" transform="translate(226 1822) rotate(0)">
 <title>Media (1,1): LAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="2" data-action="LCtrl" transform="translate(306 1798) rotate(0)">
 <title>Media (1,2): LCtrl</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">L Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="3" data-action="LShift" transform="translate(386 1824) rotate(0)">
 <title>Media (1,3): LShift</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:15.7px">L Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="4" data-action="No" transform="translate(466 1834) rotate(0)">
@@ -706,7 +708,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 <title>Media (1,6): MediaPrevTrack</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:13.8px">Previous</text>
-<text class="sub" x="0" y="22" style="fill:#aa3e74">track</text>
+<text class="sub" x="0" y="22" style="fill:#721045">track</text>
 </g>
 <g class="binding" data-row="1" data-col="7" data-action="AudioVolDown" transform="translate(926 1798) rotate(0)">
 <title>Media (1,7): AudioVolDown</title>
@@ -722,7 +724,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 <title>Media (1,9): MediaNextTrack</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Next</text>
-<text class="sub" x="0" y="22" style="fill:#aa3e74">track</text>
+<text class="sub" x="0" y="22" style="fill:#721045">track</text>
 </g>
 <g class="binding" data-row="2" data-col="0" data-action="No" transform="translate(146 1942) rotate(0)">
 <title>Media (2,0): No</title>
@@ -731,7 +733,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="1" data-action="RAlt" transform="translate(226 1894) rotate(0)">
 <title>Media (2,1): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="2" data-action="No" transform="translate(306 1870) rotate(0)">
@@ -751,40 +753,40 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="5" data-action="User9" transform="translate(766 1906) rotate(0)">
 <title>Media (2,5): User9</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:12.2px">USB / BLE</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">toggle</text>
+<text class="sub" x="0" y="22" style="fill:#003497">toggle</text>
 </g>
 <g class="binding" data-row="2" data-col="6" data-action="User0" transform="translate(846 1896) rotate(0)">
 <title>Media (2,6): User0</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">BT 0</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="2" data-col="7" data-action="User1" transform="translate(926 1870) rotate(0)">
 <title>Media (2,7): User1</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">BT 1</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="2" data-col="8" data-action="User2" transform="translate(1006 1894) rotate(0)">
 <title>Media (2,8): User2</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">BT 2</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="2" data-col="9" data-action="User3" transform="translate(1086 1942) rotate(0)">
 <title>Media (2,9): User3</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cce4f2;stroke:#375cc6;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">BT 3</text>
-<text class="sub" x="0" y="22" style="fill:#375cc6">profile</text>
+<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
 </g>
 <g class="binding" data-row="3" data-col="2" data-action="No" transform="translate(387 1969) rotate(0)">
 <title>Media (3,2): No; held selector from Base</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#fad6ef;stroke:#aa3e74;stroke-width:1.7"/>
-<text class="flag" x="0" y="-18" style="fill:#aa3e74">HELD</text>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8e6f5;stroke:#721045;stroke-width:1.7"/>
+<text class="flag" x="0" y="-18" style="fill:#721045">HELD</text>
 <text class="main" x="0" y="1" style="font-size:21.0px">Esc</text>
-<text class="sub" x="0" y="22" style="fill:#aa3e74">Media</text>
+<text class="sub" x="0" y="22" style="fill:#721045">Media</text>
 </g>
 <g class="binding" data-row="3" data-col="3" data-action="No" transform="translate(480 1981) rotate(15)">
 <title>Media (3,3): No</title>
@@ -800,7 +802,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 <title>Media (3,5): MediaStop</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Stop</text>
-<text class="sub" x="0" y="22" style="fill:#aa3e74">media</text>
+<text class="sub" x="0" y="22" style="fill:#721045">media</text>
 </g>
 <g class="binding" data-row="3" data-col="6" data-action="MediaPlayPause" transform="translate(752 1981) rotate(-15)">
 <title>Media (3,6): MediaPlayPause</title>
@@ -814,9 +816,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 </g>
 <g id="layer-4" data-layer="Num">
-<rect x="60" y="2090" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="2106" width="300" height="38" rx="9" fill="#cbf09f"/>
-<text class="heading" x="600" y="2133" style="fill:#5a7400">4 · Num</text>
+<rect x="60" y="2090" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="2106" width="300" height="38" rx="9" fill="#c0e7d4"/>
+<text class="heading" x="600" y="2133" style="fill:#124b41">4 · Num</text>
 <text class="caption dim" x="600" y="2166">Hold Bksp thumb</text>
 <g class="binding" data-row="0" data-col="0" data-action="LeftBracket" transform="translate(146 2284) rotate(0)">
 <title>Num (0,0): LeftBracket</title>
@@ -865,9 +867,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="0" data-col="9" data-action="TD(0)" transform="translate(1086 2284) rotate(0)">
 <title>Num (0,9): TD(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#c74400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f1c8b5;stroke:#63192a;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Boot</text>
-<text class="sub" x="0" y="22" style="fill:#c74400">2× tap</text>
+<text class="sub" x="0" y="22" style="fill:#63192a">2× tap</text>
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="Semicolon" transform="translate(146 2356) rotate(0)">
 <title>Num (1,0): Semicolon</title>
@@ -901,22 +903,22 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="6" data-action="RShift" transform="translate(846 2310) rotate(0)">
 <title>Num (1,6): RShift</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:15.7px">R Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="7" data-action="RCtrl" transform="translate(926 2284) rotate(0)">
 <title>Num (1,7): RCtrl</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="8" data-action="RAlt" transform="translate(1006 2308) rotate(0)">
 <title>Num (1,8): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="9" data-action="RGui" transform="translate(1086 2356) rotate(0)">
 <title>Num (1,9): RGui</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R GUI</text>
 </g>
 <g class="binding" data-row="2" data-col="0" data-action="Grave" transform="translate(146 2428) rotate(0)">
@@ -961,7 +963,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="8" data-action="RAlt" transform="translate(1006 2380) rotate(0)">
 <title>Num (2,8): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="9" data-action="No" transform="translate(1086 2428) rotate(0)">
@@ -991,10 +993,10 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="3" data-col="6" data-action="No" transform="translate(752 2467) rotate(-15)">
 <title>Num (3,6): No; held selector from Base</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#cbf09f;stroke:#5a7400;stroke-width:1.7"/>
-<text class="flag" x="0" y="-18" style="fill:#5a7400">HELD</text>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#c0e7d4;stroke:#124b41;stroke-width:1.7"/>
+<text class="flag" x="0" y="-18" style="fill:#124b41">HELD</text>
 <text class="main" x="0" y="1" style="font-size:21.0px">Bksp</text>
-<text class="sub" x="0" y="22" style="fill:#5a7400">Num</text>
+<text class="sub" x="0" y="22" style="fill:#124b41">Num</text>
 </g>
 <g class="binding" data-row="3" data-col="7" data-action="No" transform="translate(845 2455) rotate(0)">
 <title>Num (3,7): No</title>
@@ -1003,9 +1005,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 </g>
 <g id="layer-5" data-layer="Sym">
-<rect x="60" y="2576" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="2592" width="300" height="38" rx="9" fill="#bfefef"/>
-<text class="heading" x="600" y="2619" style="fill:#0f708a">5 · Sym</text>
+<rect x="60" y="2576" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="2592" width="300" height="38" rx="9" fill="#e0f2fa"/>
+<text class="heading" x="600" y="2619" style="fill:#005077">5 · Sym</text>
 <text class="caption dim" x="600" y="2652">Hold Enter thumb</text>
 <g class="binding" data-row="0" data-col="0" data-action="WM(LeftBracket,LShift)" transform="translate(146 2770) rotate(0)">
 <title>Sym (0,0): WM(LeftBracket,LShift)</title>
@@ -1054,9 +1056,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="0" data-col="9" data-action="TD(0)" transform="translate(1086 2770) rotate(0)">
 <title>Sym (0,9): TD(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#c74400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f1c8b5;stroke:#63192a;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Boot</text>
-<text class="sub" x="0" y="22" style="fill:#c74400">2× tap</text>
+<text class="sub" x="0" y="22" style="fill:#63192a">2× tap</text>
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="WM(Semicolon,LShift)" transform="translate(146 2842) rotate(0)">
 <title>Sym (1,0): WM(Semicolon,LShift)</title>
@@ -1090,22 +1092,22 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="6" data-action="RShift" transform="translate(846 2796) rotate(0)">
 <title>Sym (1,6): RShift</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:15.7px">R Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="7" data-action="RCtrl" transform="translate(926 2770) rotate(0)">
 <title>Sym (1,7): RCtrl</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="8" data-action="RAlt" transform="translate(1006 2794) rotate(0)">
 <title>Sym (1,8): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="9" data-action="RGui" transform="translate(1086 2842) rotate(0)">
 <title>Sym (1,9): RGui</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R GUI</text>
 </g>
 <g class="binding" data-row="2" data-col="0" data-action="WM(Grave,LShift)" transform="translate(146 2914) rotate(0)">
@@ -1150,7 +1152,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="8" data-action="RAlt" transform="translate(1006 2866) rotate(0)">
 <title>Sym (2,8): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="9" data-action="No" transform="translate(1086 2914) rotate(0)">
@@ -1175,10 +1177,10 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="3" data-col="5" data-action="No" transform="translate(671 2988) rotate(-30)">
 <title>Sym (3,5): No; held selector from Base</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#bfefef;stroke:#0f708a;stroke-width:1.7"/>
-<text class="flag" x="0" y="-18" style="fill:#0f708a">HELD</text>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#e0f2fa;stroke:#005077;stroke-width:1.7"/>
+<text class="flag" x="0" y="-18" style="fill:#005077">HELD</text>
 <text class="main" x="0" y="1" style="font-size:21.0px">Enter</text>
-<text class="sub" x="0" y="22" style="fill:#0f708a">Sym</text>
+<text class="sub" x="0" y="22" style="fill:#005077">Sym</text>
 </g>
 <g class="binding" data-row="3" data-col="6" data-action="No" transform="translate(752 2953) rotate(-15)">
 <title>Sym (3,6): No</title>
@@ -1192,9 +1194,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 </g>
 <g id="layer-6" data-layer="Fun">
-<rect x="60" y="3062" width="1080" height="464" rx="18" fill="#fff6d8" stroke="#c5baa6"/>
-<rect x="450" y="3078" width="300" height="38" rx="9" fill="#ffceb0"/>
-<text class="heading" x="600" y="3105" style="fill:#ba2d2f">6 · Fun</text>
+<rect x="60" y="3062" width="1080" height="464" rx="18" fill="#ffffff" stroke="#9f9f9f"/>
+<rect x="450" y="3078" width="300" height="38" rx="9" fill="#ffe8e8"/>
+<text class="heading" x="600" y="3105" style="fill:#7f0000">6 · Fun</text>
 <text class="caption dim" x="600" y="3138">Hold Del thumb</text>
 <g class="binding" data-row="0" data-col="0" data-action="F12" transform="translate(146 3256) rotate(0)">
 <title>Fun (0,0): F12</title>
@@ -1243,9 +1245,9 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="0" data-col="9" data-action="TD(0)" transform="translate(1086 3256) rotate(0)">
 <title>Fun (0,9): TD(0)</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#c74400;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f1c8b5;stroke:#63192a;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:21.0px">Boot</text>
-<text class="sub" x="0" y="22" style="fill:#c74400">2× tap</text>
+<text class="sub" x="0" y="22" style="fill:#63192a">2× tap</text>
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="F11" transform="translate(146 3328) rotate(0)">
 <title>Fun (1,0): F11</title>
@@ -1279,22 +1281,22 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="1" data-col="6" data-action="RShift" transform="translate(846 3282) rotate(0)">
 <title>Fun (1,6): RShift</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:15.7px">R Shift</text>
 </g>
 <g class="binding" data-row="1" data-col="7" data-action="RCtrl" transform="translate(926 3256) rotate(0)">
 <title>Fun (1,7): RCtrl</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Ctrl</text>
 </g>
 <g class="binding" data-row="1" data-col="8" data-action="RAlt" transform="translate(1006 3280) rotate(0)">
 <title>Fun (1,8): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="1" data-col="9" data-action="RGui" transform="translate(1086 3328) rotate(0)">
 <title>Fun (1,9): RGui</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R GUI</text>
 </g>
 <g class="binding" data-row="2" data-col="0" data-action="F10" transform="translate(146 3400) rotate(0)">
@@ -1339,7 +1341,7 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="2" data-col="8" data-action="RAlt" transform="translate(1006 3352) rotate(0)">
 <title>Fun (2,8): RAlt</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f4ed7e;stroke:#a26310;stroke-width:1.7"/>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#f8f0d0;stroke:#624416;stroke-width:1.7"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">R Alt</text>
 </g>
 <g class="binding" data-row="2" data-col="9" data-action="No" transform="translate(1086 3400) rotate(0)">
@@ -1374,14 +1376,14 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#484431;text-anchor:middle}
 </g>
 <g class="binding" data-row="3" data-col="7" data-action="No" transform="translate(845 3427) rotate(0)">
 <title>Fun (3,7): No; held selector from Base</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffceb0;stroke:#ba2d2f;stroke-width:1.7"/>
-<text class="flag" x="0" y="-18" style="fill:#ba2d2f">HELD</text>
+<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ffe8e8;stroke:#7f0000;stroke-width:1.7"/>
+<text class="flag" x="0" y="-18" style="fill:#7f0000">HELD</text>
 <text class="main" x="0" y="1" style="font-size:21.0px">Del</text>
-<text class="sub" x="0" y="22" style="fill:#ba2d2f">Fun</text>
+<text class="sub" x="0" y="22" style="fill:#7f0000">Fun</text>
 </g>
 </g>
 <text class="legend" x="600" y="3560">Boot: double-tap the same-hand top-row pinkie while holding a layer thumb. Redo uses macro 0.</text>
 <text class="caption dim" x="600" y="3590">Num / Sym / Fun: right thumb, left-hand actions. Nav / Mouse / Media: left thumb, right-hand actions.</text>
 <text class="caption dim" x="600" y="3626">HELD marks the selector, not a new binding. Small chord labels show modifiers pressed with the key.</text>
-<text class="caption dim" x="600" y="3658">Source: keyboard.toml · schematic placement · Ef Melissa Light palette</text>
+<text class="caption dim" x="600" y="3658">Source: keyboard.toml · schematic placement · Modus Operandi palette</text>
 </svg>
