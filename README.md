@@ -89,9 +89,16 @@ Hold Escape for Media. On the right half:
 - Top row, columns 6–9: profiles 4, 5, next profile, previous profile.
 - Hold a profile key for five seconds to forget that profile's bond and re-pair.
 
-Each screen shows local battery level in ten segments, or `?` when unknown.
-The bolt indicates local USB power, not charging. The central also shows the
-Bluetooth profile and active layer; the peripheral shows its split connection.
+Each screen uses a compact dark layout with a battery icon and numeric
+percentage, or `?` and `--%` when unknown. The bolt indicates local USB power,
+not charging. The central shows the prominent uppercase layer and a compact
+zero-based profile (`P0`, `P1`, etc.). Its static host icon distinguishes connected
+(plain Bluetooth symbol), advertising (small squares and short arcs on both sides),
+and disconnected (an X). The peripheral shows `OK` or `WAIT` for its split link.
+
+Status fields have fixed bounds. Ordinary changes update only affected physical
+rows; startup, wake, and recovery still redraw the full screen. Unchanged content
+uses hold commands at the same 16 ms panel cadence, without advertising animation.
 
 After 30 seconds idle, split-link subrating reduces radio activity and the
 screens clear and switch off their supply. They reinitialize and redraw on
