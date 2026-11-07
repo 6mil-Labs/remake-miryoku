@@ -31,6 +31,32 @@ pub enum HostLink {
     Connected,
 }
 
+// Miryoku seal by manna-harbour, sampled to 20 × 20 without smoothing from:
+// https://github.com/manna-harbour/miryoku/blob/master/data/cover/miryoku-kle-cover.png
+// One row per word, leftmost pixel in bit 19; foreground is white on the LCD.
+const MIRYOKU_SEAL: [u32; 20] = [
+    0b11111111111111111111,
+    0b10000000000000000001,
+    0b10000000000000000001,
+    0b10011111100101101001,
+    0b10010110100111111001,
+    0b10011111100001100001,
+    0b10011111100001100001,
+    0b10010110100101101001,
+    0b10011111100111111001,
+    0b10000110000001100001,
+    0b10000110000001100001,
+    0b10011111100111111001,
+    0b10010110100101101001,
+    0b10010111100101101001,
+    0b10010111100101101001,
+    0b10010110000101101001,
+    0b10010111111101101001,
+    0b10000000000000000001,
+    0b10000000000000000001,
+    0b11111111111111111111,
+];
+
 struct ScaledTarget<'a, D> {
     display: &'a mut D,
     origin: Point,
@@ -248,6 +274,13 @@ impl ScreenState {
         _now_us: u64,
     ) -> Result<(), D::Error> {
         display.clear(BinaryColor::Off)?;
+        for (y, row) in MIRYOKU_SEAL.iter().enumerate() {
+            for x in 0..20 {
+                if row & (1 << (19 - x)) != 0 {
+                    Pixel(Point::new(42 + x, 2 + y as i32), BinaryColor::On).draw(display)?;
+                }
+            }
+        }
         text(
             display,
             if self.role == Role::Central {

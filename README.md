@@ -89,6 +89,8 @@ Hold Escape for Media. On the right half:
 - Top row, columns 6–9: profiles 4, 5, next profile, previous profile.
 - Hold a profile key for five seconds to forget that profile's bond and re-pair.
 
+Each screen has a static white-on-black [Miryoku seal by manna-harbour](https://github.com/manna-harbour/miryoku/blob/master/data/cover/miryoku-kle-cover.png)
+in its top-right corner, sampled to 20 × 20 pixels from the original artwork.
 Each screen uses a compact dark layout with a battery icon and numeric
 percentage, or `?` and `--%` when unknown. The bolt indicates local USB power,
 not charging. The central shows the prominent uppercase layer and a compact
