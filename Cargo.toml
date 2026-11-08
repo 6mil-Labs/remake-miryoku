@@ -8,8 +8,8 @@ edition = "2024"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-# Use the same released RMK version in firmware and native checks.
-rmk = { version = "=0.9.0", default-features = false, features = [
+# Allow RMK 0.9.x patch releases; keep firmware and native checks aligned.
+rmk = { version = "0.9.0", default-features = false, features = [
     "nrf52840_ble",
     "split",
     "subrating",
@@ -20,13 +20,13 @@ rmk = { version = "=0.9.0", default-features = false, features = [
     "host_lock",
     "watchdog",
 ] }
-nrf-sdc = { version = "=0.4.0", default-features = false, features = [
+nrf-sdc = { version = "0.4.0", default-features = false, features = [
     "defmt",
     "peripheral",
     "central",
     "nrf52840",
 ] }
-nrf-mpsl = { version = "=0.4.0", default-features = false, features = [
+nrf-mpsl = { version = "0.4.0", default-features = false, features = [
     "defmt",
     "critical-section-impl",
     "nrf52840",

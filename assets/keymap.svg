@@ -650,29 +650,25 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#000000;text-anchor:middle}
 <rect class="disabled" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">—</text>
 </g>
-<g class="binding" data-row="0" data-col="6" data-action="User4" transform="translate(846 1752) rotate(0)">
-<title>Media (0,6): User4</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
-<text class="main" x="0" y="1" style="font-size:21.0px">BT 4</text>
-<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
+<g class="binding" data-row="0" data-col="6" data-action="No" transform="translate(846 1752) rotate(0)">
+<title>Media (0,6): No</title>
+<rect class="disabled" x="-36" y="-32" width="72" height="64" rx="8"/>
+<text class="main" x="0" y="7" style="font-size:21.0px">—</text>
 </g>
-<g class="binding" data-row="0" data-col="7" data-action="User5" transform="translate(926 1726) rotate(0)">
-<title>Media (0,7): User5</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
-<text class="main" x="0" y="1" style="font-size:21.0px">BT 5</text>
-<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
+<g class="binding" data-row="0" data-col="7" data-action="No" transform="translate(926 1726) rotate(0)">
+<title>Media (0,7): No</title>
+<rect class="disabled" x="-36" y="-32" width="72" height="64" rx="8"/>
+<text class="main" x="0" y="7" style="font-size:21.0px">—</text>
 </g>
-<g class="binding" data-row="0" data-col="8" data-action="User6" transform="translate(1006 1750) rotate(0)">
-<title>Media (0,8): User6</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
-<text class="main" x="0" y="1" style="font-size:15.7px">Next BT</text>
-<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
+<g class="binding" data-row="0" data-col="8" data-action="No" transform="translate(1006 1750) rotate(0)">
+<title>Media (0,8): No</title>
+<rect class="disabled" x="-36" y="-32" width="72" height="64" rx="8"/>
+<text class="main" x="0" y="7" style="font-size:21.0px">—</text>
 </g>
-<g class="binding" data-row="0" data-col="9" data-action="User7" transform="translate(1086 1798) rotate(0)">
-<title>Media (0,9): User7</title>
-<rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
-<text class="main" x="0" y="1" style="font-size:15.7px">Prev BT</text>
-<text class="sub" x="0" y="22" style="fill:#003497">profile</text>
+<g class="binding" data-row="0" data-col="9" data-action="No" transform="translate(1086 1798) rotate(0)">
+<title>Media (0,9): No</title>
+<rect class="disabled" x="-36" y="-32" width="72" height="64" rx="8"/>
+<text class="main" x="0" y="7" style="font-size:21.0px">—</text>
 </g>
 <g class="binding" data-row="1" data-col="0" data-action="LGui" transform="translate(146 1870) rotate(0)">
 <title>Media (1,0): LGui</title>
@@ -751,8 +747,8 @@ text{font-family:"DejaVu Sans",sans-serif;fill:#000000;text-anchor:middle}
 <rect class="disabled" x="-36" y="-32" width="72" height="64" rx="8"/>
 <text class="main" x="0" y="7" style="font-size:21.0px">—</text>
 </g>
-<g class="binding" data-row="2" data-col="5" data-action="User9" transform="translate(766 1906) rotate(0)">
-<title>Media (2,5): User9</title>
+<g class="binding" data-row="2" data-col="5" data-action="User7" transform="translate(766 1906) rotate(0)">
+<title>Media (2,5): User7</title>
 <rect class="key" x="-36" y="-32" width="72" height="64" rx="8" style="fill:#ecedff;stroke:#003497;stroke-width:1.7"/>
 <text class="main" x="0" y="1" style="font-size:12.2px">USB / BLE</text>
 <text class="sub" x="0" y="22" style="fill:#003497">toggle</text>

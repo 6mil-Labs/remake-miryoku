@@ -127,7 +127,7 @@ fn miryoku_seal_is_visible_on_both_roles_and_survives_field_updates() {
                 next.set_battery(Some(100));
                 next.set_usb_powered(true);
                 next.set_layer(3);
-                next.set_host(5, HostLink::Advertising);
+                next.set_host(3, HostLink::Advertising);
                 next.set_central_connected(true);
                 next.render_changes(&mut actual, &previous).unwrap();
                 assert_eq!(actual, image(&next));
@@ -215,7 +215,7 @@ fn field_updates_send_partial_rows_and_erase_previous_values() {
                 screen.state_mut().set_layer(3);
             }
             2 => {
-                screen.state_mut().set_host(5, HostLink::Connected);
+                screen.state_mut().set_host(3, HostLink::Connected);
             }
             3 => {
                 screen.state_mut().set_battery(Some(100));
@@ -230,10 +230,10 @@ fn field_updates_send_partial_rows_and_erase_previous_values() {
                 screen.state_mut().set_usb_powered(false);
             }
             7 => {
-                screen.state_mut().set_host(5, HostLink::Advertising);
+                screen.state_mut().set_host(3, HostLink::Advertising);
             }
             8 => {
-                screen.state_mut().set_host(5, HostLink::Inactive);
+                screen.state_mut().set_host(3, HostLink::Inactive);
             }
             _ => {
                 screen.state_mut().set_layer(0);
@@ -341,7 +341,7 @@ fn every_layer_and_profile_value_stays_inside_the_screen() {
     let mut state = ScreenState::new(Role::Central);
     for layer in [0, 1, 2, 3, 4, 5, 6, 255] {
         state.set_layer(layer);
-        for profile in [0, 5, 255] {
+        for profile in [0, 3, 255] {
             state.set_host(profile, HostLink::Connected);
             let _ = image(&state);
         }
@@ -379,7 +379,7 @@ fn all_profiles_and_layer_labels_remain_distinguishable() {
     let mut state = ScreenState::new(Role::Central);
     state.set_host(0, HostLink::Connected);
     let mut profiles = Vec::new();
-    for profile in 0..6 {
+    for profile in 0..4 {
         state.set_host(profile, HostLink::Connected);
         let actual = image(&state);
         assert!(!profiles.contains(&actual), "profile {profile}");

@@ -59,6 +59,52 @@ fn miryoku_has_no_legacy_tri_layer_or_thumb_combos() {
 }
 
 #[test]
+fn miryoku_bluetooth_exposes_four_host_profiles() {
+    let constants = config().build_constants(&["split", "_ble"]).unwrap();
+    assert_eq!(constants.ble_profiles_num, 4);
+}
+
+#[test]
+fn media_bluetooth_bindings_match_miryoku_babel() {
+    // Miryoku Babel 64791c9: MEDIA has output toggle then BT0–BT3 on
+    // the right bottom row, with no Bluetooth actions on the top row.
+    let map = config().keymap().unwrap();
+    assert_eq!(
+        &map.keymap[3][2][5..10],
+        ["User7", "User0", "User1", "User2", "User3"]
+    );
+    for col in 5..10 {
+        assert_eq!(map.keymap[3][0][col], "No");
+    }
+}
+
+#[test]
+fn media_output_toggle_and_vial_labels_follow_rmk_profile_count() {
+    let config = config();
+    let profiles = config
+        .build_constants(&["split", "_ble"])
+        .unwrap()
+        .ble_profiles_num;
+    // RMK process_user assigns next/previous/clear/output after the profile
+    // slots. Vial's customKeycodes array labels User IDs by array position.
+    let output_id = profiles + 3;
+    let map = config.keymap().unwrap();
+    assert_eq!(map.keymap[3][2][5], format!("User{output_id}"));
+
+    let vial: serde_json::Value = serde_json::from_str(include_str!("../../../vial.json")).unwrap();
+    let labels = vial["customKeycodes"].as_array().unwrap();
+    for id in 0..profiles {
+        assert_eq!(labels[id]["name"], format!("BT{id}"));
+    }
+    for (offset, name) in ["NEXT_BT", "PREV_BT", "CLR_BT", "SWITCH"]
+        .into_iter()
+        .enumerate()
+    {
+        assert_eq!(labels[profiles + offset]["name"], name);
+    }
+}
+
+#[test]
 fn physical_column_nets_reach_the_correct_logical_keys_on_both_halves() {
     let config = config();
     let BoardConfig::Split(split) = config.hardware().unwrap().board else {

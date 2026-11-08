@@ -1,4 +1,4 @@
-//! Host checks compile the actual firmware modules against the pinned upstream RMK.
+//! Host checks compile the actual firmware modules against released upstream RMK.
 
 #![cfg(test)]
 
@@ -430,7 +430,7 @@ mod tests {
         }
         let before = image(&p);
         assert!(!p.set_layer(3));
-        assert!(!p.set_host(5, HostLink::Connected));
+        assert!(!p.set_host(3, HostLink::Connected));
         assert_eq!(image(&p), before);
         let before = image(&c);
         assert!(!c.set_central_connected(true));
@@ -491,12 +491,12 @@ mod tests {
         for i in 0..30 {
             screen
                 .state_mut()
-                .set_host((i % 6) as u8, HostLink::Connected);
+                .set_host((i % 4) as u8, HostLink::Connected);
             screen.state_mut().set_layer((i % 4) as u8);
         }
         futures::executor::block_on(screen.tick(3_216_000)).unwrap();
         let mut state = ScreenState::new(Role::Central);
-        state.set_host(5, HostLink::Connected);
+        state.set_host(1, HostLink::Connected);
         state.set_layer(1);
         assert_panel_state(&t, &state);
         // Content writes near the next deadline must not defer inversion.
@@ -564,7 +564,7 @@ mod tests {
         }));
         publish_event(CentralConnectedEvent { connected: true });
         let mut connection = ConnectionStatus::new();
-        connection.ble.profile = 5;
+        connection.ble.profile = 3;
         connection.ble.state = BleState::Advertising;
         publish_event(ConnectionStatusChangeEvent(connection));
         publish_event(LayerChangeEvent(3));
@@ -572,7 +572,7 @@ mod tests {
         peripheral.drain_into(&mut p);
         let mut expected = ScreenState::new(Role::Central);
         expected.set_battery(Some(73));
-        expected.set_host(5, HostLink::Advertising);
+        expected.set_host(3, HostLink::Advertising);
         expected.set_layer(3);
         assert_eq!(c, expected);
         let mut expected_p = ScreenState::new(Role::Peripheral);
@@ -580,13 +580,13 @@ mod tests {
         expected_p.set_central_connected(true);
         assert_eq!(p, expected_p);
         for i in 0..30 {
-            connection.ble.profile = (i % 6) as u8;
+            connection.ble.profile = (i % 4) as u8;
             connection.ble.state = BleState::Connected;
             publish_event(ConnectionStatusChangeEvent(connection));
             publish_event(LayerChangeEvent((i % 4) as u8));
         }
         central.drain_into(&mut c);
-        expected.set_host(5, HostLink::Connected);
+        expected.set_host(1, HostLink::Connected);
         expected.set_layer(1);
         assert_eq!(c, expected);
         publish_event(BatteryStatusEvent(BatteryStatus::Unavailable));
@@ -822,7 +822,7 @@ mod tests {
         publish_event(CentralConnectedEvent { connected: true });
         publish_event(LayerChangeEvent(3));
         let mut connection = ConnectionStatus::new();
-        connection.ble.profile = 5;
+        connection.ble.profile = 3;
         connection.ble.state = BleState::Connected;
         publish_event(ConnectionStatusChangeEvent(connection));
         let mut running = Box::pin(processor.polling_loop());

@@ -5,7 +5,10 @@ firmware sample for the 36-key
 [REMAKE keyboard](https://github.com/6mil-labs/remake), with nice!nano v2
 controllers, a BLE split link, USB/BLE host connections, and nice!view screens.
 
-Firmware and host tests both use **released RMK 0.9.0 from crates.io**.
+Firmware and host tests both use **released RMK 0.9.x from crates.io**.
+The manifests allow compatible patch releases; committed lockfiles retain
+exact versions for reproducible builds. Keep both lockfiles on the same RMK
+version when updating dependencies, then run the native tests and firmware build.
 There are no Git dependencies or local source overrides. `keyboard.toml` is
 the complete keymap; `vial.json` exposes all 36 physical keys for remapping.
 
@@ -78,15 +81,15 @@ key if an early chord is ambiguous. Tune `[behavior.morse]` for your typing styl
 The key positions follow the
 [Miryoku reference](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)
 and [Miryoku Babel](https://github.com/manna-harbour/miryoku_babel/tree/64791c9f895e9b49809e36420ebbf1b8573288cc)
-by manna-harbour. The sample adds REMAKE's Bluetooth controls where RGB controls
-would otherwise be unused.
+by manna-harbour. The sample uses RMK's Bluetooth actions for Miryoku's
+BT0–BT3 and output toggle; unsupported RGB controls remain unbound.
 
 ## Bluetooth, displays and power
 
 Hold Escape for Media. On the right half:
 
-- Bottom row, inner to outer: output toggle, profiles 0, 1, 2, 3.
-- Top row, columns 6–9: profiles 4, 5, next profile, previous profile.
+- Bottom row, inner to outer: output toggle, BT0, BT1, BT2, BT3.
+- Four host profiles are available. The top row has no Bluetooth controls.
 - Hold a profile key for five seconds to forget that profile's bond and re-pair.
 
 Each screen has a static white-on-black [Miryoku seal by manna-harbour](https://github.com/manna-harbour/miryoku/blob/master/data/cover/miryoku-kle-cover.png)
@@ -129,8 +132,9 @@ Put each controller into its UF2 bootloader and copy the matching image:
 - `remake-miryoku-central.uf2` — left/central half.
 - `remake-miryoku-peripheral.uf2` — right/peripheral half.
 
-Flash matching builds to both halves. Switching RMK versions or Cargo features
-can clear stored settings and bonds, requiring host and split re-pairing.
+Flash matching builds to both halves. Switching RMK versions, Cargo features
+or the BLE profile count can clear stored settings and bonds, requiring host
+and split re-pairing.
 Back up custom Vial mappings before resetting a stored keymap to load these defaults.
 
 ## Hardware mapping and tests

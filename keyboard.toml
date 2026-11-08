@@ -53,9 +53,9 @@ No     RAlt  No     No      No  No     MouseWheelLeft    MouseWheelDown    Mouse
 [[keymap.layer]]
 name = "Media"
 keys = """
-TD(0)  No    No     No      No  No     User4           User5          User6        User7
+TD(0)  No    No     No      No  No     No              No             No           No
 LGui   LAlt  LCtrl  LShift  No  No     MediaPrevTrack  AudioVolDown   AudioVolUp   MediaNextTrack
-No     RAlt  No     No      No  User9  User0           User1          User2        User3
+No     RAlt  No     No      No  User7  User0           User1          User2        User3
              No     No      No  MediaStop MediaPlayPause AudioMute
 """
 
@@ -89,8 +89,8 @@ F10 F1 F2 F3 Pause        No No     No     RAlt  No
 [rmk]
 # Match ZMK's 5ms press/release debounce.
 debounce_time = 5
-# The number of available BLE profiles
-ble_profiles_num = 6
+# Miryoku's four host profiles: BT0–BT3.
+ble_profiles_num = 4
 # enable sleep
 split_central_sleep_timeout_seconds = 30
 
