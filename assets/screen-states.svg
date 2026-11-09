@@ -3,7 +3,6 @@
 <desc id="description">Left · connected; Left · advertising; Left · disconnected; Right · connected; Right · waiting. Pixel-accurate monochrome firmware previews, not hardware photographs.</desc>
 <metadata>{"palette_scope": "Documentation canvas, bezel and captions only; LCD pixels remain black and white.", "pixel_geometry": "68x160 portrait, binary foreground/background", "presentation_palette": "Modus Operandi, Protesilaos Stavrou, 20261015.953 (6272f81ae3fe)", "renderer_commit": null, "renderer_sha256": "0d5473a656b47389adb76160fc18035378d5f5f63a11e0fb377cf33eea058f55", "source": "Rendered by the actual firmware ScreenState::render on the host; no browser fonts inside screens."}</metadata>
 <defs><path id="miryoku-seal" fill="#fff" d="M42 2h20v1h-20zM42 3h1v19h-1zM61 3h1v19h-1zM45 5h6v1h-6zM53 5h1v2h-1zM55 5h2v14h-2zM58 5h1v2h-1zM45 6h1v5h-1zM47 6h2v13h-2zM50 6h1v5h-1zM54 6h1v1h-1zM57 6h1v1h-1zM46 7h1v2h-1zM49 7h1v2h-1zM53 9h1v2h-1zM58 9h1v2h-1zM46 10h1v1h-1zM49 10h1v1h-1zM54 10h1v1h-1zM57 10h1v1h-1zM45 13h2v1h-2zM49 13h2v1h-2zM53 13h2v1h-2zM57 13h2v1h-2zM45 14h1v5h-1zM50 14h1v3h-1zM53 14h1v5h-1zM58 14h1v5h-1zM49 15h1v2h-1zM49 18h4v1h-4zM43 21h18v1h-18z"/></defs>
-<rect width="1200" height="100%" fill="#ffffff"/>
 <g fill="#000000" font-family="DejaVu Sans, sans-serif" text-anchor="middle">
 <text x="600" y="30" font-size="23" font-weight="600">REMAKE Miryoku · connection states</text>
 <text fill="#595959" x="600" y="54" font-size="13">68 × 160 pixels per screen · dark, one-bit layout · enlarged without smoothing</text>
